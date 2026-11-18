@@ -155,10 +155,12 @@ at the start of each sample).
 | A PCM-heavy song (225 KB PDX) | Load time |
 |---|---|
 | Decoding the PDX (emulator, HostFS) | 18.4 s |
-| Decoding the PDX (OtterX hardware, the earlier decoder with a 2-stage high-pass) | 23 s |
+| Decoding the PDX (OtterX hardware, SD card) | 21 s |
 | Its pack (460 KB), emulator: HostFS / SD card image | 1.1 s / 5.0 s (about the same as KERNAL LOAD) |
+| Its pack (460 KB), OtterX hardware, SD card | 2.8 s |
 
-The pack's load time has not been measured on hardware yet.
+The hardware times were taken with a stopwatch, from pressing Return until the music
+starts (2026-11).
 
 ### 4.1 Making packs (`tools/mkpack.py`)
 

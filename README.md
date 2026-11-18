@@ -28,9 +28,9 @@ the authors of MXDRV. See [Credits](#credits).
   through VERA PCM.
   - PDX samples are decoded on the X16 while the PDX is read.
   - Alternatively, they can be read from a **P16 pack** made on a PC beforehand, which is
-    much faster. For a PCM-heavy song, decoding the PDX takes about 18 seconds in the
-    emulator (23 seconds on hardware, OtterX, with an earlier, slower decoder); its pack
-    loads in about 1 second from the host folder and 5 seconds from an SD card image.
+    much faster. For a PCM-heavy song on hardware (OtterX, from the SD card), decoding the
+    PDX takes about 21 seconds, and its pack loads in about 3 seconds. (In the emulator:
+    18 seconds, and about 1 second for the pack from the host folder.)
   - The samples get the X68000's 183 Hz output high-pass. The X68000's low-pass can be
     added on a PC with `mkpack.py --x68filter` (see below).
 - **Resources:** 4 RAM banks, golden RAM `$0400`-`$07FF`, VIA1 timer 1 and the IRQ vector
